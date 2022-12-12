@@ -4,24 +4,38 @@ body{
 
 h1{
     text-align: center;
+    margin-top: 3.5rem;
+    margin-bottom: 1.5rem;
+    color:blueviolet;
+    font-size: 3rem;
+    text-shadow: 5px 5px #eddcd2;
 }
 
 .container{
     display: grid;
-    /* grid-template-columns: 200px 300px; */
-    grid-template-columns: repeat(16, 35px);
-    grid-template-rows: repeat(16, 35px);
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(16, 38px);
+    grid-template-rows: repeat(16, 38px);
     grid-gap: 5px;
     justify-content: center;
     margin: auto;
-    margin-top: 150px;
+    margin-top: 100px;
 }
 
-.container>div{
+.grid_Item{
     border: 3px solid black;
+    padding: 20px;
     background-color: white;
 }
 
-.container>div:hover{
+/* .grid_Item:hover{
     background-color: red;
+} */
+
+
+.grid_Item.active{
+    background-color: orange;
 }
