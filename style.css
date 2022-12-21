@@ -4,37 +4,54 @@ body{
 
 h1{
     text-align: center;
-    margin-top: 3.5rem;
+    margin-top: 0;
     margin-bottom: 1.5rem;
     color:blueviolet;
     font-size: 3rem;
     text-shadow: 5px 5px #eddcd2;
+}
+button { 
+    font-size: large;
+    margin: 50px;
+    margin-left: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 150px;
+    border: 2px solid #008CBA;
+    border-radius: 15px;
+}
+  
+button:hover {
+    background-color: brown;
+    color: white;
 }
 
 .container{
     display: grid;
 }
 
+div.grid{
+    height: 700px;
+    width: 700px;
+    margin-left: 600px;
+}
+
 .grid{
     display: grid;
-    grid-template-columns: repeat(16, 38px);
-    grid-template-rows: repeat(16, 38px);
-    grid-gap: 5px;
+    grid-template-columns: repeat(20, 35px);
+    grid-template-rows: repeat(20, 35px);
+    grid-gap: 1p;
     justify-content: center;
-    margin: auto;
-    margin-top: 100px;
+    margin: 0;
+    margin-top: -10px;
 }
-
 .grid_Item{
-    border: 3px solid black;
-    padding: 20px;
+    border: 3px solid black ;
+    /* padding: 20px; */
     background-color: white;
 }
-
-/* .grid_Item:hover{
-    background-color: red;
-} */
-
 
 .grid_Item.active{
     background-color: orange;
