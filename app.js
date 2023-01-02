@@ -9,7 +9,7 @@ function buttonClick(){
       addGrid(gridHeight, gridWidth)
 }
 
-addGrid(10, 16)
+addGrid(16, 16)
 
 function addGrid(height, width){
     container.innerHTML = ''
