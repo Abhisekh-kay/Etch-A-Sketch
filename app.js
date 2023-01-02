@@ -1,26 +1,23 @@
 const container = document.querySelector('.container')
 
 
-
-
-let gridSize = 16;
-
 // Adding event listner to the button
 document.querySelector(".button").addEventListener('click', buttonClick);
 function buttonClick(){
-      gridSize =prompt("Enter the square per side: ");
-      addGrid(gridSize)
+      gridHeight =prompt("Enter the height: ");
+      gridWidth = prompt("Enter the width")
+      addGrid(gridHeight, gridWidth)
 }
 
-addGrid(gridSize)
+addGrid(10, 16)
 
-function addGrid(gridSize){
+function addGrid(height, width){
     container.innerHTML = ''
-    for(var i =0; i<gridSize; i++){  
+    for(var i =0; i<height; i++){  
         const grid_row = document.createElement('div')
         grid_row.classList.add('grid_Row')
         container.appendChild(grid_row)
-        for (var j = 0;j<gridSize;j++){
+        for (var j = 0;j<width;j++){
             const grid_Item = document.createElement('div')
             grid_Item.classList.add('grid_Item')
             grid_row.appendChild(grid_Item)
