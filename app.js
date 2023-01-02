@@ -3,7 +3,7 @@ const grid = document.createElement('div')
 grid.classList.add('grid')
 container.appendChild(grid)
 
-let gridSize = '20';
+let gridSize = '16';
 
 // Adding event listner to the button
 document.querySelector(".button").addEventListener('click', buttonClick);

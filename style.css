@@ -35,13 +35,13 @@ button:hover {
 div.grid{
     height: 700px;
     width: 700px;
-    margin-left: 600px;
+    margin-left: 400px;
 }
 
 .grid{
     display: grid;
-    grid-template-columns: repeat(20, 35px);
-    grid-template-rows: repeat(20, 35px);
+    grid-template-columns: repeat(16, 35px);
+    grid-template-rows: repeat(16, 35px);
     grid-gap: 1p;
     justify-content: center;
     margin: 0;
